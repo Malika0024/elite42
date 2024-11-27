@@ -2,3 +2,38 @@
     margin: 0;
     padding: 0;
 }
+ul.parent{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: gray;
+
+
+li{
+    position: relative;
+    a{
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    &:hover {
+        color: red;
+    }
+
+    }
+    ul{
+        top: 24px;
+        padding: 50px;
+        position:absolute;
+        display: none;
+        background-color: grey;
+        width: 150px;
+    }
+    &:hover{
+        ul{
+            display:block;
+        }
+    }
+}
+}
