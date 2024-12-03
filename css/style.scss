@@ -2,3 +2,68 @@
     margin: 0;
     padding: 0;
 }
+ul.parent{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: grey;
+    padding: 6px;
+li{
+    position: relative;
+    a{
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 20px;
+        color:pink;
+        cursor:pointer;
+        &:hover{
+            color: #fff;
+           }
+        }
+    }
+}
+.header{
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+.content{
+    .products{ 
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+        justify-content: space-between;
+        gap: 10px;
+        flex: wrap;
+        list-style: none;
+        li{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: #f0f0f0;
+
+            button{
+                position: absolute;
+                bottom: 0;
+                height: 25px;
+                width: 100%;
+                background-color: grey;
+                color: #fff;
+                border:none;
+            }
+            img{
+                height: 160px;
+                width: 190px;
+                position: absolute;
+                bottom: 30px;
+                left: 0px;
+
+            }
+        }
+
+    }
+}
